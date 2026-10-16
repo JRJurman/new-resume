@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<title>Jesse Jurman - Resume</title>
+		<!-- font - Poppins -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<style> body { font-family: "Poppins", sans-serif; } </style>
+
+		<!-- theme colors -->
+		<style>
+			:root {
+				--font-color: #243745;
+				--hr-0-color: #465b6b;
+				--hr-1-color: #748796;
+				--hr-2-color: #c0cfd9;
+			}
+		</style>
+		<!-- page styles -->
+		<style>
+			* {
+				color: var(--font-color);
+				font-weight: 400;
+			}
+
+			a, span, p {
+				font-size: 12px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			h2 {
+				font-size: 18px;
+				margin: 0;
+			}
+
+			[style-italic] {
+				font-style: italic;
+			}
+
+			p {
+				margin-block-start: 0.5em;
+			}
+
+			hr {
+				border: 0.15em solid;
+				border-radius: 1em;
+				margin-block-end: 0.3em;
+			}
+
+			hr[resume-level="0"] { border-color: var(--hr-0-color); }
+			hr[resume-level="1"] { border-color: var(--hr-1-color); }
+			hr[resume-level="2"] { border-color: var(--hr-2-color); }
+		</style>
+
+		<!-- component block styles -->
+		<style>
+			resume-header {
+				display: grid;
+				grid-template-columns: 1fr auto;
+				grid-template-areas:
+				'header website'
+				'header email';
+
+				h1 { grid-area: header }
+				a[href^="https"] { grid-area: website }
+				a[href^="mailto"] { grid-area: email }
+
+				h1 {
+					margin: 0;
+					line-height: 1em;
+    			align-self: end;
+				}
+
+				a {
+					font-size: 12px;
+				}
+			}
+
+			resume-block-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+
+				span {
+					font-style: italic;
+				}
+			}
+
+			resume-block {
+				p, span {
+					margin-left: 1em;
+				}
+				hr {
+					margin-left: 0.8em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<resume-header>
+			<h1>Jesse Jurman</h1>
+			<a href="https://jrjurman.com">jrjurman.com</a>
+			<a href="mailto:j.r.jurman@gmail.com">j.r.jurman@gmail.com</a>
+		</resume-header>
+		<hr resume-level="0">
+		<header-block>
+			<p>
+				Software Engineer with 10+ years of experience in Full Stack web application development.
+				<br>
+				Passionate about web-standards, frontend, accessibility, and site reliability.
+			</p>
+		</header-block>
+
+		<hr resume-level="1">
+		<college-block>
+			<h2>Rochester Institute of Technology</h2>
+			<span style-italic>
+				Bachelor of Science in Software Engineering, Graduated in 2016
+			</span>
+		</college-block>
+
+		<hr resume-level="1">
+		<resume-block>
+			<resume-block-header>
+				<h2>Jellyfish</h2>
+				<span>Senior Software Engineer, January 2022 - October 2026</span>
+			</resume-block-header>
+			<p>
+				Full stack engineer on various teams across the R&D org. Among many initiatives,
+				worked on charting and visualizations of engineering effort; developed workflows
+				that allowed customers to configure prompts for categorizing effort; built new
+				navigation hierarchies that massively improved customer retention; and developed the
+				SKU system that allowed sales to sell both pre-configured and bespoke app configurations.
+				<br><br>
+
+				Was embedded on both large and small teams, ranging from one to five other engineers.
+				Worked directly with product owners and designers to address both the immediate needs
+				and long term goals of the organization.
+				<br><br>
+
+				Outside of the team, participated in efforts across the org to improve CI build time,
+				develop quality standards in end-to-end testing, and worked on massive frontend refactors
+				to bring our tooling to the latest versions.
+			</p>
+			<hr resume-level="2">
+			<span>React / Typescript, Django / Python, CircleCI, Linear, Claude Code, Cypress,
+				LaunchDarkly</span>
+		</resume-block>
+
+		<hr resume-level="1">
+		<resume-block>
+			<resume-block-header>
+				<h2>Constant Contact</h2>
+				<span>Senior Software Engineer, July 2016 - December 2021</span>
+			</resume-block-header>
+			<p>
+				Full stack engineer on the Reporting team. Worked with five other engineers to build out
+				pages that presented email tracking data, and systems to detect bot interactions. Helped
+				monitor production and debug issues for the team, as well as the wider org.
+				<br><br>
+
+				As part of engineering, participated actively in guilds dedicated for backend, frontend,
+				and quality. Helped build out tooling for the frontend development, ran workshops, and
+				helped teams debug frontend tooling issues.
+			</p>
+			<hr resume-level="2">
+			<span>React / Javascript, testing-library, Java, Jenkins, Jira + Jira Automation</span>
+		</resume-block>
+
+		<hr resume-level="1">
+		<resume-block>
+			<resume-block-header>
+				<h2>Web-Components Community Group</h2>
+				<span>Member, September 2023 - Present</span>
+			</resume-block-header>
+			<p>
+				Member and contributor of an industry wide group discussing web technologies and
+				standards. Participated in regular meetings, presented prototypes and proposals to
+				browser vendors, and attended yearly conferences.
+				<br><br>
+
+				As part of the group, reported bugs and created web platform tests to validate
+				behaviors across different platforms, focused on Shadow DOM and rendering technologies.
+			</p>
+		</resume-block>
+
+		<hr resume-level="1">
+		<resume-block>
+			<resume-block-header>
+				<h2>Games for Blind Gamers</h2>
+				<span>Member, January 2024 - Present</span>
+			</resume-block-header>
+			<p>
+				Member and participant with hobbyists and accessibility consultants. Participated in
+				regular events to build blind accessible games, tools, and frameworks. Worked with Blind
+				and low-vision players to collect feedback and build intuitive experiences.
+				<br><br>
+
+				As part of this group, built several adapters and dedicated libraries to make standard
+				game engines blind-accessible on Web, Desktop, and Mobile. Validated with different
+				screen readers and accessible technologies across platforms.
+			</p>
+		</resume-block>
+	</body>
+</html>
